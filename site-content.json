@@ -1,0 +1,114 @@
+{
+  "_comment": "Edit this file (or ask your developer to). Reload index.html after changes. See QUESTIONNAIRE-FOR-NIRAJAN.md for the full intake.",
+  "person": {
+    "name": "Nirajan Paudel",
+    "heroHeadline": "Nirajan Paudel",
+    "title": "Structural engineer",
+    "location": "Pokhara",
+    "contactAddress": "Pokhara, Gandaki Province, Nepal",
+    "tagline": "",
+    "heroStatement": "Design and earthquake-safe structure for homes and small commercial buildings in Pokhara. Based at The Perfect Engineering Consultancy, Jalpa Road.",
+    "lead": "MSc structural engineering, Institute of Engineering, Tribhuvan University. NEC registration 18406 (Civil A), since 2018.",
+    "bio": "Day-to-day work: structural analysis, FEM, and architectural planning with the team on Jalpa Road. Research interests include dynamics and earthquake engineering.",
+    "photo": "images/nirajan-photo.webp",
+    "sketch": "images/nirajan-sketch.jpg",
+    "showPhotoThumbnail": false,
+    "registration": "Nepal Engineering Council · No. 18406 · Civil “A” · since 2018",
+    "education": "MSc Structural Engineering, Tribhuvan University, Institute of Engineering",
+    "expertise": [
+      "Structural analysis",
+      "Finite element analysis & modelling",
+      "Structural dynamics",
+      "Earthquake engineering",
+      "Nonlinear analysis",
+      "Construction engineering",
+      "Civil engineering materials"
+    ],
+    "researchGate": "https://www.researchgate.net/profile/Nirajan-Paudel",
+    "facebook": "https://www.facebook.com/share/1De2MfWUw1/",
+    "email": "theperfect2067@gmail.com",
+    "whatsapp": "9779856083230",
+    "viber": "9779856083230"
+  },
+  "consultancy": {
+    "name": "The Perfect Engineering Consultancy",
+    "tagline": "Building tomorrow’s foundations",
+    "address": "Jalpa Road, Pokhara-08, Gandaki Province, Nepal",
+    "managingDirector": "Rishi Kumar Shrestha",
+    "logo": "images/tpec-logo.jpg",
+    "officePhoto": "images/tpec-office.jpg",
+    "facebook": "https://www.facebook.com/theperfectengineeringconsultancy/",
+    "facebookPageAlt": "https://www.facebook.com/p/The-Perfect-Engineering-Consultancy-100063924104637/",
+    "maps": "https://www.google.com/maps/search/?api=1&query=6X8P%2BR2G%20Pokhara"
+  },
+  "projectsMore": {
+    "kicker": "Updates",
+    "title": "Site visits, models, and handovers",
+    "note": "More handovers and site photos on The Perfect Engineering Consultancy Facebook page when clients allow.",
+    "cta": "Office page on Facebook"
+  },
+  "processIntro": {
+    "title": "How a project runs",
+    "lead": "Four stages from first site walk to handover - the sequence you follow with the office, not additional services."
+  },
+  "contact": {
+    "email": "theperfect2067@gmail.com",
+    "whatsapp": "9779856083230",
+    "showLandlineOnSite": false,
+    "landlineDisplay": "+977 61-582471",
+    "landlineTel": "+97761582471",
+    "contactIntro": "Share your plot location and a rough brief. You’ll get a reply by email, WhatsApp, or Viber - and a site visit when needed."
+  },
+  "projects": [
+    {
+      "title": "Modern-classic residence",
+      "client": "Ms. Sabina Shrestha",
+      "location": "Pokhara-26",
+      "role": "Architecture & structure",
+      "status": "Design completed",
+      "note": "Custom residential architectural and structural design. Photos and sheets from the office archive will be added here.",
+      "image": null
+    },
+    {
+      "title": "Jalpa Road - design & handover",
+      "client": null,
+      "location": "Pokhara-08",
+      "role": "Consultancy projects",
+      "status": "Ongoing & completed",
+      "note": "Residential and commercial designs documented on the consultancy Facebook page - full list coming from Nirajan.",
+      "image": null
+    }
+  ],
+  "services": [
+    {
+      "name": "Planning & architecture",
+      "detail": "Concept layout, municipal building drawings, and detailed working drawings."
+    },
+    {
+      "name": "Structural design & analysis",
+      "detail": "Earthquake-resistant framing, soil and load paths, drawings the builder can read on site."
+    },
+    {
+      "name": "3D visualization & animation",
+      "detail": "Exterior and interior models and walkthroughs before construction starts."
+    },
+    {
+      "name": "Detail project reports",
+      "detail": "DPR, technical reporting, and documentation for approval or funding."
+    },
+    {
+      "name": "Valuation & estimation",
+      "detail": "Quantities and cost guidance tied to the design."
+    },
+    {
+      "name": "Consulting & construction",
+      "detail": "Site visits, supervision, and property handovers in Pokhara and nearby."
+    }
+  ],
+  "process": [
+    { "title": "Site visit", "text": "Walk the plot, soil context, access, and what you need from the building." },
+    { "title": "Design & 3D", "text": "Plans and visuals to react to before structural sizing and sheets." },
+    { "title": "Drawings & approval", "text": "Architectural and structural packages for municipality and contractors." },
+    { "title": "Build & handover", "text": "Support on site until the project is handed over." }
+  ]
+}
