@@ -53,10 +53,10 @@
   },
   "contact": {
     "email": "theperfect2067@gmail.com",
-    "showLandlineOnSite": false,
+    "showLandlineOnSite": true,
     "landlineDisplay": "+977 61-582471",
     "landlineTel": "+97761582471",
-    "contactIntro": "Message Nirajan directly (email, WhatsApp, or Viber), or use the office card for the practice inbox, Facebook page, and map."
+    "contactIntro": "Message Nirajan directly, or use the office card for the practice landline, inbox, Facebook page, and map."
   },
   "projects": [
     {
