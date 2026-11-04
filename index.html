@@ -107,8 +107,18 @@ body.nav-open .site-nav{transform:translateX(0);visibility:visible;pointer-event
 .drawing-autoplay .seg button[aria-checked="true"]::after{content:"";position:absolute;left:.25rem;right:.25rem;bottom:.72rem;height:2px;background:var(--accent);transform-origin:left;animation:layer-tab 4s linear forwards;pointer-events:none}
 @keyframes layer-tab{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media(prefers-reduced-motion:reduce){.drawing-autoplay .seg button[aria-checked="true"]::after{display:none}}
-.fig-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -0.5rem;padding:0 .5rem}
-.dwg{width:100%;min-width:36rem;height:auto;display:block}
+.fig-scroll{overflow-x:hidden;margin:0;padding:0}
+.dwg{width:100%;max-width:100%;min-width:0;height:auto;display:block;vertical-align:top}
+@media(min-width:768px){
+.fig-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -.5rem;padding:0 .5rem}
+.dwg{min-width:36rem}
+}
+@media(max-width:767px){
+.drawing-meta{flex-direction:column;align-items:flex-start;gap:.5rem}
+.drawing-meta>span{line-height:1.45;max-width:100%}
+.seg{width:100%;gap:.5rem 1rem}
+.drawing-meta,.seg button{font-size:max(.6875rem,.625rem + .15vw)}
+}
 .dwg text{font:500 10px var(--mono);fill:var(--mut)}
 .dwg .st{opacity:0;transition:opacity .55s ease-in-out}
 .dwg[data-v="both"] .st,.dwg[data-v="str"] .st{opacity:1}
@@ -522,11 +532,11 @@ function bindServiceItems(){
 
 function bindDirectLinks(ch,p){
   p=p||{};
-  var mail=mailtoHref(ch.email);
-  if($('#hero-email')){$('#hero-email').href=mail}
+  var personalMail=mailtoHref(p.email||ch.email);
+  if($('#hero-email')&&personalMail&&personalMail!=='#'){$('#hero-email').href=personalMail}
   if(ch.whatsapp&&$('#cw')){fillContactRow($('#cw'),whatsappHref(ch.whatsapp),SVG_WA,'WhatsApp','Open chat','wa')}
   if(ch.viber&&$('#cv')){fillContactRow($('#cv'),viberHref(ch.viber),SVG_VIBER,'Viber','Open chat','viber')}
-  if(ch.email&&$('#contact-direct-mail')){fillContactRow($('#contact-direct-mail'),mail,SVG_MAIL,'Email','Personal inbox','mail')}
+  if(ch.email&&$('#contact-direct-mail')){fillContactRow($('#contact-direct-mail'),personalMail,SVG_MAIL,'Email','Personal inbox','mail')}
   if(p.facebook&&$('#contact-fb')){fillContactRow($('#contact-fb'),p.facebook,SVG_FB,'Facebook','Personal profile','fb')}
 }
 
@@ -561,6 +571,7 @@ function render(D){
   if($('#hero-lead')){$('#hero-lead').textContent=p.lead||''}
   var ch=directChannels(p);
   bindDirectLinks(ch,p);
+  if(p.email&&$('#hero-email')){$('#hero-email').href=mailtoHref(p.email)}
   if(c.officePhoto&&$('#hero-bg')){
     $('#hero-bg').src=c.officePhoto;
     $('#hero-bg').alt='Office of '+(c.name||'The Perfect Engineering Consultancy')+', '+((c.address||'Pokhara').split(',')[0]);
